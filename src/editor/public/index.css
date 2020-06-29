@@ -1,0 +1,21 @@
+body {
+  font-size: 20px;
+}
+
+.column {
+  display: flex;
+  flex: none;
+  flex-direction: column;
+}
+
+.column > *:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.row {
+  display: flex;
+}
+
+.row > *:not(:last-child) {
+  margin-right: 16px;
+}
