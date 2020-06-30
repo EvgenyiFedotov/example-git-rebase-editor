@@ -12,6 +12,7 @@ const PATH_CONTENT = ARGS[2];
 async function main() {
   const result = await new Promise(async (resolve) => {
     runServer({
+      port: PORT,
       onContent: getContent,
       onComplete: resolve,
     });
